@@ -42,7 +42,7 @@ tags: pattern recognition
 - Sample
 
 ### 특징 (Feature)
-이제 샘플을 분류하는데 사용할 특징 <sup>feature</sup> 을 추출해야 합니다. *M* 개의 클래스가 서로 다른 값을 보이는 특징일수록 분류하기 유리하기 때문에 좋은 특징이라 할 수 있습니다.
+이제 샘플을 분류하는데 사용할 `특징` <sup>`feature`</sup> 을 추출해야 합니다. *M* 개의 클래스가 서로 다른 값을 보이는 특징일수록 분류하기 유리하기 때문에 좋은 특징이라 할 수 있습니다.
 
 #### 어떤 특징을 사용해야 할까?
 개별적인 화소를 특징으로 하면 어떨까요? 8X8 픽셀 이미지를 사용한다고 했을 때, 특징은 64개가 됩니다. 이들을 벡터로 표현하면 64 차원 벡터 ***x*** = (x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>64</sub>)<sup>T</sup> 가 된다. 이때 **`x`** 를 `특징 벡터` <sup>`feature vector`</sup> 라고 한다. 그리고 흔히 특징의 개수를 *`d`* 로 표기한다.
@@ -63,5 +63,16 @@ tags: pattern recognition
 - Feature space
 - Discriminating power
 - Curse of dimensionality
+
+
+
+
+### 분류 (Classification)
+어떤 패턴이 들어왔을 때 이것을 *M* 개의 클래스 중 하나로 할당해 주는 작업을 `분류` <sup>`classification`</sup> 이라고 하고 이 작업을 담당하는 프로그램을 `분류기` <sup>`classifier`</sup> 라고 한다.
+
+#### 어떻게 분류할 것인가?
+두 개의 클래스 w<sub>1</sub>, w<sub>2</sub>가 있고, 특징 공간은 3차원이라고 합시다. w<sub>1</sub> 과 w<sub>2</sub> 는 각각 10개과 12개의 훈련 샘플을 갖고 있습니다.
+
+가장 쉽게 생각할 수 있는 방법은 직선으로 두 클래스를 구별하는 것입니다. 혹은 직선 외에도 2차 곡선 혹은 그 이상의 차수의 곡선 등을 사용할 수 있겠죠. 이렇게 `모델 선택` <sup>`model selection`</sup> 은 분류기를 표현하는 수학적 모델로 무엇을 쓸 것인지 결정하는 작업입니다.
 
 
