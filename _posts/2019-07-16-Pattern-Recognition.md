@@ -3,7 +3,7 @@ title: Pattern Recognition - 1.Introduction
 description: Introduction to Pattern Recognition
 categories:
  - pattern recognition
-tags: pattern recognition
+tags: pattern_recognition
 ---
 
 > 패턴 인식의 핵심적인 내용은 `특징`과 `분류`라는 두 가지로 구성된다.
@@ -84,3 +84,5 @@ tags: pattern recognition
 
 #### 분류기를 어떻게 학습시킬까?
 분류기의 모델 선택이 끝났으면 이제 분류기를 `학습` <sup>`learning`</sup> 시켜야 합니다. 이때 `학습`과 `훈련` <sup>`training`</sup> 은 같은 의미로 사용합니다.
+
+직선 모델을 사용하는 경우 직선의 매개 변수인 기울기와 절편을 구하는 과정이 학습입니다. 학습은 훈련 집합을 가지고 이루어 집니다. 
