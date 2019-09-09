@@ -2,7 +2,7 @@
 title: SeleniumIDE
 description: SeleniumIDE 사용법
 categories:
- - monitoring
+ - note
 tags: monitoring
 ---
 
