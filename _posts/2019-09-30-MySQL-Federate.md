@@ -1,5 +1,5 @@
 ---
-title: Federate(Federate)
+title: Federate(MySQL)
 description: GROUP_CONCAT(MySQL)
 categories:
  - MySQL
